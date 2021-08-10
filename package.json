@@ -1,14 +1,21 @@
 {
+  "name": "js-files-to-ts",
+  "description": "Mass convert JS files to TS files",
+  "version": "1.0.3",
   "dependencies": {
     "@types/node": "^16.4.13",
     "typescript": "^4.3.5"
   },
-  "name": "js-to-ts",
-  "description": "Mass convert JS files to TS files",
-  "version": "1.0.0",
   "main": "./dist/index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "bin": {
+    "js-files-to-ts": "./dist/index.js"
+  },
   "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc",
     "start": "ts-node ./src/index.ts",
     "test": ""
   },
