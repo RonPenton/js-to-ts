@@ -1,7 +1,7 @@
 {
   "name": "js-files-to-ts",
   "description": "Mass convert JS files to TS files",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "dependencies": {
     "@types/node": "^16.4.13",
     "commander": "^9.0.0",
